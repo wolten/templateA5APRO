@@ -13,6 +13,7 @@ import { GraficasComponent } from './pages/graficas/graficas.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { BreadcumbComponent } from './shared/breadcumb/breadcumb.component';
+import { PagesComponent } from './pages/pages.component';
 
 
 
@@ -26,7 +27,8 @@ import { BreadcumbComponent } from './shared/breadcumb/breadcumb.component';
     GraficasComponent,
     HeaderComponent,
     SidebarComponent,
-    BreadcumbComponent
+    BreadcumbComponent,
+    PagesComponent
   ],
   imports: [
     BrowserModule,
