@@ -4,8 +4,11 @@ import { ProgressComponent } from './progress/progress.component';
 import { GraficasComponent } from './graficas/graficas.component';
 import { PagesComponent } from './pages.component';
 
+// MODULES
 import { SharedModule } from '../shared/shared.module';
 
+// RUTAS
+import { PAGES_ROUTES } from './pages.routes';
 
 
 @NgModule({
@@ -21,7 +24,8 @@ import { SharedModule } from '../shared/shared.module';
         GraficasComponent
     ],
     imports: [
-        SharedModule
+        SharedModule,
+        PAGES_ROUTES
     ]
 })
 
