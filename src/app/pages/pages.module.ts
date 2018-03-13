@@ -12,7 +12,7 @@ import { FormsModule } from '@angular/forms';
 // RUTAS
 import { PAGES_ROUTES } from './pages.routes';
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
-
+import { GraficoDonaComponent   } from '../components/grafico-dona/grafico-dona.component';
 
 // PLUGINS
 import { ChartsModule } from 'ng2-charts';
@@ -25,7 +25,8 @@ import { ChartsModule } from 'ng2-charts';
         ProgressComponent,
         GraficasComponent,
         PagesComponent,
-        IncrementadorComponent
+        IncrementadorComponent,
+        GraficoDonaComponent
     ],
     exports: [
         DashboardComponent,
