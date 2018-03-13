@@ -6,9 +6,11 @@ import { PagesComponent } from './pages.component';
 
 // MODULES
 import { SharedModule } from '../shared/shared.module';
+import { FormsModule } from '@angular/forms';
 
 // RUTAS
 import { PAGES_ROUTES } from './pages.routes';
+import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
 
 
 @NgModule({
@@ -16,7 +18,8 @@ import { PAGES_ROUTES } from './pages.routes';
         DashboardComponent,
         ProgressComponent,
         GraficasComponent,
-        PagesComponent
+        PagesComponent,
+        IncrementadorComponent
     ],
     exports: [
         DashboardComponent,
@@ -25,7 +28,8 @@ import { PAGES_ROUTES } from './pages.routes';
     ],
     imports: [
         SharedModule,
-        PAGES_ROUTES
+        PAGES_ROUTES,
+        FormsModule
     ]
 })
 
