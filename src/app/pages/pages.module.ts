@@ -4,6 +4,7 @@ import { ProgressComponent } from './progress/progress.component';
 import { GraficasComponent } from './graficas/graficas.component';
 import { PagesComponent } from './pages.component';
 
+
 // MODULES
 import { SharedModule } from '../shared/shared.module';
 import { FormsModule } from '@angular/forms';
@@ -11,6 +12,11 @@ import { FormsModule } from '@angular/forms';
 // RUTAS
 import { PAGES_ROUTES } from './pages.routes';
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
+
+
+// PLUGINS
+import { ChartsModule } from 'ng2-charts';
+
 
 
 @NgModule({
@@ -29,7 +35,8 @@ import { IncrementadorComponent } from '../components/incrementador/incrementado
     imports: [
         SharedModule,
         PAGES_ROUTES,
-        FormsModule
+        FormsModule,
+        ChartsModule
     ]
 })
 
